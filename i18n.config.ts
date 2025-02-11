@@ -3,7 +3,7 @@ export default defineI18nConfig(() => ({
   locale: 'en',
   messages: {
     en: {
-      welcome: 'Welcome to the jungle'
+      welcome: 'Welcome to the jungle',
     },
     fr: {
       welcome: 'Bienvenue'

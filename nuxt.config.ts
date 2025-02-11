@@ -12,8 +12,9 @@ export default defineNuxtConfig({
   },
   i18n: {
     vueI18n: './i18n.config.ts', // if you are using custom path, default,
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
     defaultLocale: 'en',
+    locales: ['en', 'fr'],
   },
   css: [
     // files from excalibur
