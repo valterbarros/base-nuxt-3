@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { computed } from 'vue';
+
 const localePath = useLocalePath();
 const toPage1 = computed(() => localePath({
   name: 'first',
