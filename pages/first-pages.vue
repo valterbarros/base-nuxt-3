@@ -1,13 +1,8 @@
 <script setup lang="ts">
   import { XSelect } from '@clicksign/excalibur';
-import { useQuery } from '@tanstack/vue-query';
+  import { fetchT } from './get-teste';
 
-  const { isLoading }  = useQuery({
-    queryKey: ['test'],
-    queryFn: async () => {
-      return 'test';
-    },
-  });
+  const { isLoading } = fetchT();
 </script>
 
 <template>
@@ -15,5 +10,6 @@ import { useQuery } from '@tanstack/vue-query';
     pages folder
     <XSelect :items="[{text: 'name', value: 'value'}]" />
     loading state: {{ isLoading }}
+    {{ $t('welcome') }}
   </div>
 </template>

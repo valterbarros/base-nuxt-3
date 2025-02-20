@@ -11,11 +11,20 @@ export default defineNuxtConfig({
   ],
   imports: {
     autoImport: true,
-    global: true
+    global: true,
+    presets:[
+      {
+        from: '@gtm-support/vue-gtm',
+        imports: ['useGtm'],
+      },
+    ],
+  },
+  experimental: {
+    typedPages: true,
   },
   i18n: {
     vueI18n: './i18n.config.ts', // if you are using custom path, default,
-    strategy: 'prefix_except_default',
+    strategy: 'prefix_and_default',
     defaultLocale: 'en',
     locales: ['en', 'fr'],
   },
@@ -26,4 +35,14 @@ export default defineNuxtConfig({
     '@clicksign/excalibur/styles/tokens',
     '@clicksign/excalibur/styles',
   ],
-})
+  runtimeConfig: {
+    public: {
+      gtm: {
+        id: 'GTM-09234X',
+        enableRouterSync: true,
+        loadScript: true,
+        enabled: true,
+      },
+    },
+  },
+});
