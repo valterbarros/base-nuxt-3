@@ -8,7 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test:run": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
     "@babel/plugin-transform-named-capturing-groups-regex": "~7.22.5",
@@ -39,7 +41,8 @@
     "@types/node": "18",
     "@typescript-eslint/parser": "^8.24.1",
     "@vitejs/plugin-legacy": "~4.1.1",
-    "@vitest/coverage-istanbul": "^1.6.0",
+    "@vitest/coverage-istanbul": "^1.6.1",
+    "@vitest/coverage-v8": "^1.6.1",
     "@vitest/eslint-plugin": "^1.1.31",
     "browserslist-useragent-regexp": "^4.1.0",
     "cypress": "~13.3.0",
@@ -68,7 +71,8 @@
     "vite-svg-loader": "^4.0.0",
     "vitest": "^1.6.1",
     "vitest-environment-nuxt": "^1.0.1",
-    "vue-tsc": "^2.2.2"
+    "vue-tsc": "^2.2.2",
+    "happy-dom": "^17.1.1"
   },
   "dependencies": {
     "@clicksign/ds-icons": "1.7.0",

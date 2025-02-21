@@ -27,6 +27,9 @@ export default defineNuxtConfig({
     strategy: 'prefix_and_default',
     defaultLocale: 'en',
     locales: ['en', 'fr'],
+    bundle: {
+      optimizeTranslationDirective: false,
+    }
   },
   css: [
     // files from excalibur

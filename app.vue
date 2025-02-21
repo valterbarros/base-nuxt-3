@@ -10,8 +10,6 @@ const toPage2 = computed(() => localePath({
   name: 'second',
 }, 'fr'));
 
-const { setLocale } = useI18n();
-
 onMounted(() => {
   // setLocale('en');
 })
